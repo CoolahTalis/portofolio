@@ -68,17 +68,5 @@
 //     console.log(choice);
 // });
 
-var countds = 0 ; 
-// var counts = 0 ; 
-// var countmin = 0 ; 
-// var counth = 0 ; 
-$('.submit').on('click', function(){
-    setInterval(function() {
-        if(countds<99)countds++;
-        else countds=0;
-        $('.chrono').text(count);
-    },10);
-   
-})
 
 })(jQuery);

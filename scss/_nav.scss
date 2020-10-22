@@ -36,8 +36,8 @@
         text-decoration: none;
         background-color: $anth;
         border-radius: 15px;
-        padding: 5px 10px;
-        @include fontage('MS', 0.7rem, center, '', '');
+        padding: 4px 5px;
+        @include fontage('MS', 0.4rem, '', '', '');
 
         &:hover {
             color: $bld;

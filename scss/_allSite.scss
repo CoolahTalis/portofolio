@@ -5,64 +5,17 @@ body {
     background-attachment: fixed;
 }
 
-// @media screen and (min-width:768px) {
-
-// }
-
-
-@media screen and (max-width:768px) {
-    
-     .circleww1 img{
-        width: 100%;
-    }
-
-     .circleww2 img{
-        display: none;
-    }
-
-    .circle-btn {
-        font-size: 100%;
-    }
-
-    .speech p{
-        width: 5%;
-    }
-    // .pic-me {
-
-    // }
-
-     nav ul li{
-        display: none;
-    }
-
-    footer {
-        width: 100%;
-    }
-}
-
-
 // A PROPOS !
 
-.circleww2 img{   
-    position: absolute;
-    left: 45%;
-    top: 50%;
-    transform: translate(-50%, -50%); 
-}
-
-
-.skill-img {
-    position: absolute;
-    top: 150px;
-    right: 80px;
-
-        &>img {
-            width: 40vh;
-        }    
+.img-container {      
+    // @extend %absoluteCenter;   
+    display: inline-flex;
 }
 
 .pic-me {
-    top: 70px;
+    display: inline-flex;
+    justify-content: end;
+    top: 10px;
 
         &>img {
             width: 30vh;
@@ -70,58 +23,79 @@ body {
 }
 
 .speech {
-    position: relative;
-    height: 50vh;
-    width: 30vw;
-    border: 1px solid;
+    display: inline-flex;
     border-radius: 10px;
-    @include fontage('MS', 1.2rem, justify, 4px, 30px);
-    background-color: $anth;
-    top: 50px;
-    left: 67%;
-
+    background-color: rgba($color: $anth, $alpha: 0.7);
+ 
         &>p {
-            width: 25vw;
+            width: 50vw;
+            @include fontage('MS', 2rem, justify, '', '');
             padding: 30px;
-        }
+            }
 }
 
 // Formulaire de la page CONTACT 
 
 .circleww4 img{   
     position: absolute;
-    width: 30vw;
+    width: 25vw;
     left: 23%;
     top: 50%;
     transform: translate(-50%, -50%); 
 }
 
 .form-container {
-    position: relative;
+    position: absolute;
     flex-direction: row;
-    border-radius: 10px;
-    background-color: $anth;
-    width: 50vw;
-    height: 75vh;
-    left: 46%;
-    top: 50px;
+    background-color: rgba($color: $anth, $alpha: 0.5);
+    border-radius: 0 0 0 10px;
+    width: 54vw;
+    height: 82vh;
+    right: 0;
+    padding-bottom: 20px;
 }
 
-button {
-    background-color: #000000;
-    @include fontage('MS', 1.2rem, '', 4px, '');
+// Submit bouton du Form
+    .send {
+    background-color: $anth;
+    @include fontage('MS', 1rem, '', '', '');
     color: $leuco;
-    height: 10vh;
+    height: 5vh;
     width: 15vw;
     border-radius: 10px;
-    margin-left: 220px;
-    margin-top: 20px;
+    margin-left: 20px;
 }
 
-.dlcv {
-    width: 25vw;
+    .dlcv{
+    background-color: $anth;
+    @include fontage('MS', 0.8rem, '', '', '');
+    color: $leuco;
+    border-radius: 10px;
+    height: 90vh;    
+    width: 10vw;
     height: 5vh;
-    margin-left: 155px;
+
+    position: absolute;
+    left: 23%;
+    top: 50%;
+    transform: translate(-50%, -50%); 
+}
+
+
+input:not(#message) {
+    margin-top: 50px;
+    margin-left: 20px;
+    width: 22vw;
+    height: 4vh;
+    border-radius: 5px;
+}
+
+textarea {
+    margin-top: 60px;
+    margin-left: 20px;
+    border-radius: 5px;
+    width: 87%;
+    resize: none;
 }
 
 // label {
@@ -129,21 +103,6 @@ button {
 
 // }
 
-input:not(#message) {
-    margin-top: 60px;
-    margin-left: 20px;
-    width: 22vw;
-    height: 5vh;
-    border-radius: 5px;
-}
-
-#message {
-    margin-top: 60px;
-    margin-left: 20px;
-    border-radius: 5px;
-    width: 46vw;
-    height: 20vh;
-}
 
 // Container de la page PORTOFOLIO
 
@@ -183,3 +142,15 @@ input:not(#message) {
     height: 100%;
 }
     
+// Skills Page 
+
+
+.skill-img {
+    position: absolute;
+    top: 150px;
+    right: 80px;
+
+        &>img {
+            width: 40vh;
+        }    
+}
