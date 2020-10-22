@@ -1,0 +1,5 @@
+@import "_mixins/font-face";
+
+@include font-face ("MR", "/fonts/MR ROBOT");
+@include font-face("OS","/fonts/OpenSans-Regular");
+@include font-face("MS","/fonts/Montserrat-Regular");

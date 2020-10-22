@@ -1,0 +1,14 @@
+@mixin flex ($dir, $just, $al) {
+    display: flex;
+    flex-direction: $dir;
+    justify-content: $just;
+    align-items: $al;
+}
+
+@mixin fontage ($ff, $sizef, $textal, $letspa, $lh) {
+    font-family: $ff;
+    font-size: $sizef;
+    text-align: $textal;
+    letter-spacing: $letspa;
+    line-height: $lh;
+}

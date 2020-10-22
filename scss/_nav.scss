@@ -1,0 +1,45 @@
+
+.navigation {
+    background-image: $bgnavfoot;
+    color: $leuco;
+    height: 8vh;
+    &>ul {
+        padding: $paddingSection;
+        @include flex(row, space-between, center);
+        li:not(.lang) {
+            text-transform: uppercase;
+            @include fontage('MR', 16px, center, 5px, 0);
+                a {
+                    text-decoration: none;
+                    color: $leuco;
+                    &:hover {
+                        border-top: 5px solid $bld;
+                        padding: 10px 0px;
+                            }
+                    }
+                        img {
+                            width: 50%;
+                            border-radius: 50%;
+                            }
+                            .logo {
+                                left: 50px;
+                                }  
+                                &:hover {
+                                    color: $bld;
+                                }
+                            }
+                        }
+                    }
+
+.lang {
+        color: $leuco;
+        text-decoration: none;
+        background-color: $anth;
+        border-radius: 15px;
+        padding: 5px 10px;
+        @include fontage('MS', 0.7rem, center, '', '');
+
+        &:hover {
+            color: $bld;
+        }
+    }

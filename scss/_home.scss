@@ -1,0 +1,38 @@
+h2 {
+    @include fontage('MS', 1.5rem, left, 4px, 45px);
+    position: absolute;
+    width: 27%;
+    color: $anth;
+    font-weight: 900;
+    bottom: 140px;
+    left: 20px;
+}
+
+.title {
+    @include fontage('MR', 2.5rem, left, 10px, '');
+    margin-top: 30px;
+    padding-left: 30px;
+
+    & {
+        color: $anth;
+    }
+        &:hover {
+            color: $bld;
+        }
+}
+
+.circleww1 {
+    @extend %absoluteCenter;
+}
+
+.circle-btn {
+    @extend %absoluteCenter;
+    @include fontage('MR', 2.5rem, center, 8px, '');
+    
+        a {
+            color: $anth;
+            &:hover{
+                color: $bld;
+            }
+        }
+} 
