@@ -1,8 +1,44 @@
 body {
-    background-image: $bgbody;
+    width: 100%;
+    background-image: url(/img/bgboam.jpg);
     background-size: cover;
+    background-attachment: fixed;
 }
 
+// @media screen and (min-width:768px) {
+
+// }
+
+
+@media screen and (max-width:768px) {
+    
+     .circleww1 img{
+        width: 100%;
+    }
+
+     .circleww2 img{
+        display: none;
+    }
+
+    .circle-btn {
+        font-size: 100%;
+    }
+
+    .speech p{
+        width: 5%;
+    }
+    // .pic-me {
+
+    // }
+
+     nav ul li{
+        display: none;
+    }
+
+    footer {
+        width: 100%;
+    }
+}
 
 
 // A PROPOS !
@@ -18,25 +54,24 @@ body {
 .skill-img {
     position: absolute;
     top: 150px;
-    right: 50px;
+    right: 80px;
 
         &>img {
-            width: 50vh;
+            width: 40vh;
         }    
 }
 
 .pic-me {
-    position: absolute;
     top: 70px;
 
         &>img {
-            width: 25%;
+            width: 30vh;
         }
 }
 
 .speech {
     position: relative;
-    height: 70vh;
+    height: 50vh;
     width: 30vw;
     border: 1px solid;
     border-radius: 10px;
@@ -55,7 +90,7 @@ body {
 
 .circleww4 img{   
     position: absolute;
-    width: 30%;
+    width: 30vw;
     left: 23%;
     top: 50%;
     transform: translate(-50%, -50%); 

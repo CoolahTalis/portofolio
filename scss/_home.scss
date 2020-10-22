@@ -27,7 +27,7 @@ h2 {
 
 .circle-btn {
     @extend %absoluteCenter;
-    @include fontage('MR', 2.5rem, center, 8px, '');
+    @include fontage('MR', 2.5rem, center, 5px, '');
     
         a {
             color: $anth;

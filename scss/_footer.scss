@@ -7,9 +7,9 @@
     height: 8vh;
     width: 100%;
 
-        &>div {
+        &>div p{
             @include flex (row, center, '');
-            @include fontage('MS', 0.9rem, center, 20px, '');
-            padding: 25px;
+            @include fontage('MS', 0.9rem, center, 5px, '');
+            padding: 20px;
         }
 }
