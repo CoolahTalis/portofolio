@@ -1,0 +1,46 @@
+.landing-header {
+    &>h1 {
+        // background-image: $bgnavfoot;
+        @include fontage('MR', 5rem, center, 50px, '');
+        // color: $anth;
+        margin-top: 20px;
+        // padding: 10px;
+
+    }
+}
+
+h2 {
+    @include fontage('MS', 1.5rem, left, 4px, 45px);
+    position: absolute;
+    width: 27%;
+    color: $anth;
+    font-weight: 900;
+    bottom: 140px;
+    left: 20px;
+}
+
+.circleww2 {
+    position: absolute;
+    width: 35%;
+    left: 50%;
+    top: 50%;
+    transform: translate(-50%, -50%); 
+    &>img {
+        width: 80%;
+
+    }
+}
+
+.circle-btn {
+    position: absolute;
+    left: 50%;
+    top: 50%;
+    transform: translate(-50%, -50%);
+    @include fontage('MR', 2.5rem, left, 10px, '');
+        a {
+            color: $anth;
+    }
+        a:hover{
+            color: $bld;
+        }
+} 
