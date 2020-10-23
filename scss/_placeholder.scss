@@ -4,3 +4,10 @@
     top: 50%;
     transform: translate(-50%, -50%);
 }
+
+%grpCard {
+    display: flex;
+    width: 590px;
+    height: 340px;
+    border: 16px solid $blk;
+}

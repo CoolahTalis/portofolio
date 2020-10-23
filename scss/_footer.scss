@@ -1,15 +1,16 @@
-.footer {
-    position: absolute;
+footer {
+    position: fixed;
     background-image: $bgnavfoot;
     background-size: cover;
     color: $anth;
     bottom: 0;
     height: 8vh;
     width: 100%;
-
+// COPYRIGHT FOOTER
         &>div p{
             @include flex (row, center, '');
-            @include fontage('MS', 0.9rem, center, 5px, '');
+            @include fontage('MS', 0.8rem, center, 5px, '');
+            font-weight: 900;
             padding: 20px;
         }
 }

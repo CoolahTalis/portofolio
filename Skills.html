@@ -5,14 +5,30 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Skills</title>
 
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
     <link rel="stylesheet" href="/css/main.min.css">
 
 </head>
 <body>
     <header>
-        <nav class="navigation">
-            <ul>
-                <li><a href="/index.html"><img src="/img/log0.jpg" alt=""></a></li>
+        <nav class="navigation1">
+            <ul class="navmob">
+                <li><img src="/img/log0.jpg" alt=""></li>
+                <button class="fa fa-bars dpdown" ></button>
+                    <li class="dpd-items">
+                        <ul>
+                            <li><a href="/index.html">Accueil</a></li>
+                            <li><a href="/Skills.html">Skills</a></li>
+                            <li><a href="/Portofolio.html">Portofolio</a></li>
+                            <li><a href="/About.html">A propos</a></li>
+                            <li><a href="/Contact.html">Contact</a></li>
+                        </ul>
+                    </li>
+                </ul>
+        </nav>
+        <nav class="navigation2">
+            <ul class="navdesk">
+                <li class="logo"><a href="/index.html"><img src="/img/log0.jpg" alt=""></a></li>
                 <li><a href="/Skills.html">Skills</a></li>
                 <li><a href="/Portofolio.html">Projets</a></li>
                 <li><a href="/About.html">A propos</a></li>
@@ -20,17 +36,42 @@
                 <li class="lang">FR | EN</li>
             </ul>
         </nav>
-    </header>
 
-    <!-- Icon langage à insert dans les hexa -->
-    <main>
-        <div class="skill-img"><img src="/img/Skillgrp.png" alt=""></div>
+    <!-- ICONE LANGAGE INSERT DANS HEXA -->
+    <main>    
+        <section>
+            <p>HTML</p>
+            <div class="skl-container">
+                <div class="skl">5%</div>
+              </div>
+              
+              <p>CSS</p>
+              <div class="skl-container">
+                <div class="skl">5%</div>
+              </div>
+              
+              <p>JavaScript</p>
+              <div class="skl-container">
+                <div class="skl">-15%</div>
+              </div>
+              
+              <p>PHP</p>
+              <div class="skl-container">
+                <div class="skl">5%</div>
+              </div>
+              
+              <p>GITHUB</p>
+              <div class="skl-container">
+                <div class="skl">5%</div>
+              </div>
+        </section>
     </main>
 
     <footer class="footer">
-        <div class=""><p>Couliga YAMEOGO © 2020</p></div>
+        <div class="foot"><p>Couliga YAMEOGO © 2020</p></div>
     </footer>
 
+    <script src="https://code.jquery.com/jquery-3.5.1.min.js"></script>
     <script type="text/javascript" src="/js/dist/scripts.min.js"></script>
 </body>
 </html>

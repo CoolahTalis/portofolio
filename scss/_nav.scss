@@ -1,5 +1,6 @@
 
-.navigation {
+// ARBORESCENCE A OPTIMISER *_* !!!
+.navigation2 {
     background-image: $bgnavfoot;
     color: $leuco;
     height: 8vh;
@@ -12,8 +13,9 @@
                 a {
                     text-decoration: none;
                     color: $leuco;
+                    transition: 0.4s;
                     &:hover {
-                        border-top: 5px solid $bld;
+                        border-top: 4px solid $bld;
                         padding: 10px 0px;
                             }
                     }
@@ -21,23 +23,24 @@
                             width: 50%;
                             border-radius: 50%;
                             }
-                            .logo {
+                            img {
                                 left: 50px;
                                 }  
                                 &:hover {
                                     color: $bld;
                                 }
-                            }
-                        }
                     }
+                }
+            }
 
+// STYLE SUR BUTTON LANGAGE SWITCH
 .lang {
         color: $leuco;
         text-decoration: none;
         background-color: $anth;
         border-radius: 15px;
-        padding: 4px 5px;
-        @include fontage('MS', 0.4rem, '', '', '');
+        padding: 5px 6px;
+        @include fontage('MS', 0.5rem, '', '', '');
 
         &:hover {
             color: $bld;

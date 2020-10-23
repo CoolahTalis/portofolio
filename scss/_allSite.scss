@@ -7,29 +7,19 @@ body {
 
 // A PROPOS !
 
-.img-container {      
-    // @extend %absoluteCenter;   
-    display: inline-flex;
-}
-
 .pic-me {
-    display: inline-flex;
-    justify-content: end;
-    top: 10px;
-
-        &>img {
-            width: 30vh;
-        }
+    width: 35vh;
 }
 
+        
 .speech {
     display: inline-flex;
     border-radius: 10px;
-    background-color: rgba($color: $anth, $alpha: 0.7);
+    background-color: rgba($color: $anth, $alpha: 0.4);
  
         &>p {
-            width: 50vw;
-            @include fontage('MS', 2rem, justify, '', '');
+            width: 100%;
+            @include fontage('MS', 1.2rem, justify, '', '');
             padding: 30px;
             }
 }
@@ -56,36 +46,21 @@ body {
 }
 
 // Submit bouton du Form
-    .send {
-    background-color: $anth;
-    @include fontage('MS', 1rem, '', '', '');
-    color: $leuco;
-    height: 5vh;
-    width: 15vw;
-    border-radius: 10px;
-    margin-left: 20px;
-}
-
-    .dlcv{
+.send {
     background-color: $anth;
     @include fontage('MS', 0.8rem, '', '', '');
     color: $leuco;
-    border-radius: 10px;
-    height: 90vh;    
-    width: 10vw;
     height: 5vh;
-
-    position: absolute;
-    left: 23%;
-    top: 50%;
-    transform: translate(-50%, -50%); 
+    width: 25vw;
+    border-radius: 10px;
+    margin-left: 20px;
 }
 
 
-input:not(#message) {
+input {
     margin-top: 50px;
     margin-left: 20px;
-    width: 22vw;
+    width: 47vw;
     height: 4vh;
     border-radius: 5px;
 }
@@ -112,30 +87,36 @@ textarea {
     justify-content: center;
 }
 
-.item1 {
-    display: flex;
-    width: 590px;
-    height: 340px;
-    border: 16px solid black;
+// W.L.D.M
+.item {
+    @extend %grpCard;
 }
-.item2 {
-    display: flex;
-    width: 590px;
-    height: 340px;
-    border: 16px solid black;
-}
-.item3 {
-    display: flex;
-    width: 590px;
-    height: 340px;
-    border: 16px solid black;
-}
-.item4 {
-    display: flex;
-    width: 590px;
-    height: 340px;
-    border: 16px solid black;
-}
+
+// Ancien code .....
+// .item1 {
+//     display: flex;
+//     width: 590px;
+//     height: 340px;
+//     border: 16px solid black;
+// }
+// .item2 {
+//     display: flex;
+//     width: 590px;
+//     height: 340px;
+//     border: 16px solid black;
+// }
+// .item3 {
+//     display: flex;
+//     width: 590px;
+//     height: 340px;
+//     border: 16px solid black;
+// }
+// .item4 {
+//     display: flex;
+//     width: 590px;
+//     height: 340px;
+//     border: 16px solid black;
+// }
 
 #folio-container  img{
     width: 100%;
@@ -144,13 +125,30 @@ textarea {
     
 // Skills Page 
 
-
-.skill-img {
-    position: absolute;
-    top: 150px;
-    right: 80px;
-
-        &>img {
-            width: 40vh;
-        }    
+section {
+    p {
+        margin-bottom: -25px;
+        margin-top: 50px;
+        margin-left: 50px;    
+        font-size: 1.5rem;
+        @include fontage('MR', 1.5rem, '', '', '');
+    }
 }
+.skl-container {
+    width: 85%; 
+    border-radius: 0 20px 0 10px;
+    background-color: $blk;
+    margin-top: 30px;
+    margin-left: 50px;
+  }
+  
+  .skl {
+    text-align: right;
+    padding-top: 10px;
+    padding-bottom: 5px;
+    color: $leuco;
+    font-size: 1.5rem;
+    border-radius: 0 20px 0 10px;
+    width: 5%; background-color: $bld;
+}
+  

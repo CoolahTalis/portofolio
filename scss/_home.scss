@@ -31,8 +31,10 @@ h2 {
     
         a {
             color: $anth;
+            transition: 1s;
             &:hover{
                 color: $bld;
+                font-size: 2rem;
             }
         }
 } 
