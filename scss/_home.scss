@@ -29,7 +29,7 @@ h2 {
     @extend %absoluteCenter;
     @include fontage('MR', 2.5rem, center, 5px, '');
     
-        a {
+        a{
             color: $anth;
             transition: 1s;
             &:hover{

@@ -9,7 +9,7 @@
         @include flex(row, space-between, center);
         li:not(.lang) {
             text-transform: uppercase;
-            @include fontage('MR', 16px, center, 5px, 0);
+            @include fontage('MR', 1.2rem, center, 5px, 0);
                 a {
                     text-decoration: none;
                     color: $leuco;
