@@ -30,19 +30,22 @@
 
     .dpd-items ul {
         position: absolute;
+        z-index: 10;
         right: 0;
         top: 60px;
 // ???
 }
 
-.dpd-items li {
+.dpd-items li{
     border-radius: 5px;
     padding: 15px 12px;
     background-image: url(/img/cub.jpg);
-    color: $leuco;
     margin: 2px 0;
     font-family: 'MS';
     text-decoration: none;
+    & a {
+        color: $leuco;
+    }
 }
 
 // TOGGLE DESKTOP NAVBAR SAUF MOBILE NAVBAR

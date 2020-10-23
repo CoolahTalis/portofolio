@@ -26,6 +26,17 @@ body {
 
 // Formulaire de la page CONTACT 
 
+.socials {
+    position: absolute;
+    right: 100px;
+    bottom: 220px;
+        a{
+            text-decoration: none;
+            color: $leuco;  
+            padding:15px;      
+        }
+}
+
 .circleww4 img{   
     position: absolute;
     width: 25vw;
@@ -72,11 +83,6 @@ textarea {
     width: 87%;
     resize: none;
 }
-
-// label {
-//     display: block;
-
-// }
 
 
 // Container de la page PORTOFOLIO
